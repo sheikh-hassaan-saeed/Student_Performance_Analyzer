@@ -52,13 +52,6 @@ int main() {
     float avgAge = totalAge / (float)noOfStudents;
     float avgGPA = totalGPA / (float)noOfStudents;
 
-    // Output
-    cout << "\n========= CLASS REPORT =========\n";
-    cout << "Total Students : " << noOfStudents << "\n";
-    cout << "Average Age    : " << avgAge << "\n";
-    cout << "Average GPA    : " << avgGPA << "\n";
-    cout << "Top Student    : " << students[maxIndex].name << " (GPA: " << maxGPA << ")\n";
-    cout << "Class Grade    : ";
     
     if (avgGPA > 4.0) cout << "Invalid GPA!";
     else if (avgGPA == 4.0) cout << "A";
@@ -66,7 +59,17 @@ int main() {
     else if (avgGPA >= 2.0) cout << "C";
     else cout << "F";
 
+    // Output
+    cout << "\n========= CLASS REPORT =========\n";
+    cout << "Total Students : " << noOfStudents << "\n";
+    cout << "Average Age    : " << avgAge << "\n";
+    cout << "Average GPA    : " << avgGPA << "\n";
+    cout << "Top Student    : " << students[maxIndex].name << " (GPA: " << maxGPA << ")\n";
+    cout << "Class Grade    : ";
+
+
     cout << "\n===============================\n";
 
     return 0;
 }
+
